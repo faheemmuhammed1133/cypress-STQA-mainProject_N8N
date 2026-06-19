@@ -144,7 +144,7 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - Sidebar element (`[data-test-id="sidebar"]`, `.el-menu`, etc.) is visible.
 
 **Artifact:** Screenshot taken on completion.
-![Screenshot](./cypress/screenshots/n8n%20Authentication%20--%20TC01%20-%20logs%20in%20successfully%20and%20redirects%20to%20the%20main%20app%20(1).png)
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Authentication%20--%20TC01%20-%20logs%20in%20successfully%20and%20redirects%20to%20the%20main%20app.png)
 
 ---
 
@@ -165,7 +165,7 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - Error message matching `"Wrong username or password. Do you have caps lock on?"` is visible within 5 seconds.
 
 **Artifact:** Screenshot taken on completion.
-![Screenshot](./cypress/screenshots/n8n%20Authentication%20--%20TC02%20-%20shows%20an%20error%20toast%20when%20login%20credentials%20are%20invalid%20(1).png)
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Authentication%20--%20TC02%20-%20shows%20an%20error%20toast%20when%20login%20credentials%20are%20invalid.png)
 
 ---
 
@@ -183,7 +183,8 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - Text `"AI Agent"` is visible on the page within 5 seconds.
 
 **Artifact:** Screenshot taken on completion.
-![Screenshot](./cypress/screenshots/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC03%20-%20verifies%20workflow%20exists%20and%20loads%20successfully%20(1).png)
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC03%20-%20verifies%20workflow%20exists%20and%20loads%20successfully.png)
+
 ---
 
 ### TC04 — Workflow Node Issues Are Detected
@@ -200,7 +201,8 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - The count of issue indicators is greater than `0`.
 
 **Artifact:** Screenshot taken automatically if any issues are found.
-![Screenshot](./cypress/screenshots/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC04%20-%20identifies%20workflow%20node%20issues%20(1).png)
+
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC04%20-%20identifies%20workflow%20node%20issues.png)
 
 > **Note:** This test intentionally expects issues to exist. A passing result means the workflow has unresolved node issues (e.g. missing Google Gemini credentials), which is the expected state for this test environment.
 
@@ -220,7 +222,8 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - An element matching `.el-notification--error` is visible within 5 seconds.
 
 **Artifact:** Screenshot taken on completion.
-![Screenshot](./cypress/screenshots/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC05%20-%20executes%20the%20workflow%20and%20verifies%20execution%20fails%20due%20to%20missing%20credentials%20(1).png)
+
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC05%20-%20executes%20the%20workflow%20and%20verifies%20execution%20fails%20due%20to%20missing%20credentials.png)
 
 > ⚠️ **TC06 depends on this test having run first in the same Cypress session.** Run the full spec file rather than selecting individual tests to ensure the execution record exists.
 
@@ -251,8 +254,14 @@ Tests the AI Agent workflow page: its existence, node health, execution behaviou
 - Clicking the first failed execution row reveals detail text matching `Google Gemini Chat Model`, `error`, `failed`, or `credential` within 15 seconds.
 
 **Artifact:** Screenshot taken on completion.
-![Screenshot](./cypress/screenshots/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC06%20-%20shows%20the%20failed%20execution%20in%20Execution%20History%20with%20error%20detail.png)
+
+![Screenshot](./cypress/screenshots/n8n-ai-agent-workflow.spec.js/n8n%20Workflow%20Validation%20(AI%20Agent)%20--%20TC06%20-%20shows%20the%20failed%20execution%20in%20Execution%20History%20with%20error%20detail.png)
 ---
+
+
+
+# Jenkins run Results 
+![Result](cypress/jenkinsScreenshot/jenkins%20cypress%20test%20TC01%20-%20TC06.png)
 
 ## Test Dependencies
 
