@@ -15,6 +15,7 @@ End-to-end tests for the **n8n AI Agent workflow**, written in [Cypress](https:/
   - [Suite 1 — n8n Authentication](#suite-1--n8n-authentication)
   - [Suite 2 — n8n Workflow Validation (AI Agent)](#suite-2--n8n-workflow-validation-ai-agent)
 - [Test Cases](#test-cases)
+- [Jenkins Run Results](#jenkins-run-results)
 - [Test Dependencies](#test-dependencies)
 - [Running the Tests](#running-the-tests)
 - [Screenshots](#screenshots)
